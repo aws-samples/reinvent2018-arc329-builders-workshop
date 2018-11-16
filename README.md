@@ -96,7 +96,7 @@ aws s3 cp lambda_function.zip s3://<your S3 Bucket Name>/lambda_function.zip
 We will use Jupyter Notebooks to locally run our session examples with Pywren and have the workload executed remotely. To do so, we first need to clone this repository to our local machine:
 
 ```
-git clone https://github.com/<name>/ARC329.git
+git clone https://github.com/aws-samples/reinvent2018-arc329-builders-workshop
 ```
 
 Now enter the newly create `ARC329` folder and start a Jupyter Notebook instance by typing the following command:
