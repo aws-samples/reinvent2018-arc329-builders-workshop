@@ -113,12 +113,12 @@ This will launch a Jupyter Notebook instance and open your web browser.  Please 
 
 We will query various locations from the Landsat 8 satellite imagery and analyze them. Example scene:
 
-![Scene Example](Images/napa.jpg)
+![Scene Example](napa.jpg)
 
 We will then use the GeoTIFF imagery and it's different information to calculate the NDVI index and analyze how much cloud coverage vs the NVDI we had on certain days:
 
-![NDVI and Cloud Table](Images/TABLE.png)
+![NDVI and Cloud Table](TABLE.png)
 
 Lastly we will plot NDVI changes over time for certain areas of interest of the world:
 
-![NDVI Timeseries](Images/PLOT.png)
+![NDVI Timeseries](PLOT.png)
