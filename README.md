@@ -86,9 +86,9 @@ You should now see an output similar to the following one:
 function returned: Hello world
 
 ```
-7\. The last step we need to copy the function file we will be using in Lambda to the S3 bucket created by the pyWren setup.  At the CMD line, navigate to the root of the cloned repository and type the following.
+7\. The last step we need to copy the function file we will be using in Lambda to the S3 bucket created by the pyWren setup.  At the CMD line, type the following command.  Remember to use your bucket name from PyWren setup.
 ```
-aws s3 cp lambda_function.zip s3://<your S3 Bucket Name>/lambda_function.zip
+aws s3 cp s3://aws-samples-reinvent-arc329/lambda_function.zip s3://<your bucket name>/lambda_function.zip
 ```
 
 ## Run the session
@@ -99,7 +99,7 @@ We will use Jupyter Notebooks to locally run our session examples with Pywren an
 git clone https://github.com/aws-samples/reinvent2018-arc329-builders-workshop
 ```
 
-Now enter the newly create `ARC329` folder and start a Jupyter Notebook instance by typing the following command:
+Now enter the newly create `reinvent2018-arc329-builders-workshop` folder and start a Jupyter Notebook instance by typing the following command:
 
 ```
 jupyter notebook
