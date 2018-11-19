@@ -15,20 +15,20 @@ This session will use a [Jupyter Notebook](http://jupyter.org/), an open-source 
 1\. Install Jupyter Notebook on your laptop. _(Note: You can safely skip this step, if you have Jupyter Notebook with kernel of Python 2.7 installed on your machine)_ To do so, follow the instructions on <http://jupyter.org/install.html>. If you have `pip` installed, the easiest way to install Jupyter is by using pip. Please make sure to use **Python 2.7** and not Python 3+ for this workshop.
 
 ```
-python -m pip install --upgrade pip
-python -m pip install jupyter
+sudo python -m pip install --upgrade pip
+sudo python -m pip install jupyter
 ```
 
 2\. In addition to this, we need to install a variety of Python libraries. These libraries are used for visualization, processing of datasets and to also talk to AWS straight from Python using the [AWS SDK for Python](https://aws.amazon.com/sdk-for-python/). To do so, please execute the following commands:
 
 ```
-python -m pip install boto3 warcio matplotlib numpy wordcloud nltk rasterio scipy seaborn awscli tldextract bs4 rio_toa folium pandas
+sudo python -m pip install boto3 warcio matplotlib numpy wordcloud nltk rasterio scipy seaborn awscli tldextract bs4 rio_toa folium pandas
 ```
 
 3\. In the last step, let's install the dependencies for PyWren and set it up locally on our machine.
 
 ```
-python -m pip install pywren
+sudo python -m pip install pywren==0.3.0
 ```
 
 4\. Pywren comes with an interactive setup process as of `v0.2`, let's use this to setup Pywren: **Take note of the AWS Region(us-west-2 recommended), S3 Bucket Name and Function Name as we will need these values to configure our notebook parameters later.**
@@ -62,10 +62,10 @@ Pausing for 10 sec for changes to propagate.
 function returned: Hello world
 ```
 
-5\. PyWren uses the default Python logger to communicate progress back. Let's raise our log level in the current terminal session to INFO:
+5\. PyWren uses the default Python logger to communicate progress back. Let's raise our log level in the current terminal session to WARNING:
 
 ```
-export PYWREN_LOGLEVEL=INFO
+export PYWREN_LOGLEVEL=WARNING
 ```
 
 6\. Time to test our Pywren function and see if our laptop can communicate appropriately with our AWS environment and use PyWren in the AWS Lambda function:
