@@ -7,6 +7,20 @@ In this session we make use of a project called [pywren](http://pywren.io/) to r
 
 This session will use a [Jupyter Notebook](http://jupyter.org/), an open-source web application that allows to create and share documents that contain live code, equations, visualizations and narrative text. This session also assumes the participant has a functional AWS account with at least one IAM(AWS Identity Access Management) user configured for CLI(AWS Command Line Interface) access.
  Please follow the below setup instructions first, before proceeding with this session.
+## Virtual Enviornment Config
+create a virtual enviornment for this session.  If you have a favorite enviornment manager installed feel free to use that otherwise install **virtualenv**
+
+sudo pip install virtualenv
+
+**Next Create an Enviornment for this workshop
+
+virtualenv ARC329
+
+**Next activate the enviornment**
+
+source ARC329/bin/activate
+
+
 
 ## Setup Environment
 
@@ -42,7 +56,7 @@ This interactive script will set up your initial PyWren configuration.
 If this is your first time using PyWren then accepting the defaults should be fine.
 What is your default aws region? [us-west-2]:
 Location for config file:  [~/.pywren_config]:
-PyWren requires an s3 bucket to store intermediate data. What s3 bucket would you like to use? [jonas-pywren-604]:
+PyWren requires an s3 bucket to store intermediate data. What s3 bucket would you like to use? [pmv-aws-pywren-707]:
 Bucket does not currently exist, would you like to create it? [Y/n]: Y
 PyWren prefixes every object it puts in S3 with a particular prefix.
 PyWren s3 prefix:  [pywren.jobs]:
