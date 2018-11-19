@@ -82,10 +82,10 @@ Pausing for 10 sec for changes to propagate.
 function returned: Hello world
 ```
 
-5\. PyWren uses the default Python logger to communicate progress back. Let's raise our log level in the current terminal session to WARNING:
+5\. PyWren uses the default Python logger to communicate progress back. Let's raise our log level in the current terminal session to INFO before running the test-function so we can see the AWS Lambda activity:
 
 ```
-export PYWREN_LOGLEVEL=WARNING
+export PYWREN_LOGLEVEL=INFO
 ```
 
 6\. Time to test our Pywren function and see if our laptop can communicate appropriately with our AWS environment and use PyWren in the AWS Lambda function:
@@ -106,6 +106,11 @@ You should now see an output similar to the following one:
 function returned: Hello world
 
 ```
+**Set the loggin level to WARNING for the remainder of the session:**
+```
+export PYWREN_LOGLEVEL=WARNING
+```
+
 7\. The last step we need to copy the function file we will be using in Lambda to the S3 bucket created by the pyWren setup.  At the CMD line, type the following command.  Remember to use your bucket name from PyWren setup.
 ```
 aws s3 cp s3://aws-samples-reinvent-arc329/lambda_function.zip s3://<your bucket name>/lambda_function.zip
