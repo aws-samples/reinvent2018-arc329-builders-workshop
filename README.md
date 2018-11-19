@@ -91,7 +91,7 @@ export PYWREN_LOGLEVEL=WARNING
 6\. Time to test our Pywren function and see if our laptop can communicate appropriately with our AWS environment and use PyWren in the AWS Lambda function:
 
 ```
-pywren test_function
+pywren test-function
 ```
 
 You should now see an output similar to the following one:
