@@ -12,7 +12,7 @@ create a virtual enviornment for this session.  If you have a favorite enviornme
 ```
 sudo pip install virtualenv
 ```
-**Next Create an Enviornment for this workshop
+**Next Create an Enviornment for this workshop**
 ```
 virtualenv ARC329
 ```
