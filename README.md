@@ -48,28 +48,31 @@ sudo python -m pip install boto3 warcio matplotlib numpy wordcloud nltk rasterio
 sudo python -m pip install pywren==0.3.0
 ```
 
-4\. Pywren comes with an interactive setup process as of `v0.2`, let's use this to setup Pywren: **Take note of the AWS Region(us-west-2 recommended), S3 Bucket Name and Function Name as we will need these values to configure our notebook parameters later.**
+4\. Let's use the Pywren interactive setup process to setup Pywren on your local system, When asked to configure advances properties, select Y: **Take note of the AWS Region(us-west-2 recommended), S3 Bucket Name and Function Name as we will need these values to configure our notebook parameters later.**
 
 ```
 $ pywren-setup
 
 This is the PyWren interactive setup script
-Your AWS configuration appears to be set up, and your account ID is 123456789
+Your AWS configuration appears to be set up, and your account ID is 1234567890
 This interactive script will set up your initial PyWren configuration.
-If this is your first time using PyWren then accepting the defaults should be fine.
-What is your default aws region? [us-west-2]:
-Location for config file:  [~/.pywren_config]:
-PyWren requires an s3 bucket to store intermediate data. What s3 bucket would you like to use? [pmv-aws-pywren-707]:
-Bucket does not currently exist, would you like to create it? [Y/n]: Y
+If this is the first time you are using PyWren then accepting the defaults should be fine.
+What is your default aws region? [us-west-2]: 
+Location for config file:  [/Users/pauvince/.pywren_config]: 
+/Users/pauvince/.pywren_config already exists, would you like to overwrite? [y/N]: y
+PyWren requires an s3 bucket to store intermediate data. What s3 bucket would you like to use? [pauvince-pywren-973]: 
+Bucket does not currently exist, would you like to create it? [Y/n]: y
 PyWren prefixes every object it puts in S3 with a particular prefix.
-PyWren s3 prefix:  [pywren.jobs]:
-Would you like to configure advanced PyWren properties? [y/N]:
+PyWren s3 prefix:  [pywren.jobs]: 
+Would you like to configure advanced PyWren properties? [y/N]: y
+Each lambda function runs as a particularIAM role. What is the name of the role youwould like created for your lambda [pywren_exec_role_1]: pywren_exec_role_973
+Each lambda function has a particular function name.What is your function name? [pywren_1]: pywren_973
 PyWren standalone mode uses dedicated AWS instances to run PyWren tasks. This is more flexible, but more expensive with fewer simultaneous workers.
-Would you like to enable PyWren standalone mode? [y/N]:
+Would you like to enable PyWren standalone mode? [y/N]: n
 Creating config /Users/pauvince/.pywren_config
-new default file created in ~/.pywren_config
-lambda role is pywren_exec_role_1
-Creating bucket pywren-604.
+new default file created in /Users/pauvince/.pywren_config
+lambda role is pywren_exec_role_973
+Creating bucket pauvince-pywren-973.
 Creating role.
 Deploying lambda.
 Pausing for 5 seconds for changes to propagate.
