@@ -9,16 +9,19 @@ This session will use a [Jupyter Notebook](http://jupyter.org/), an open-source 
  Please follow the below setup instructions first, before proceeding with this session.
 ## Virtual Enviornment Config
 create a virtual enviornment for this session.  If you have a favorite enviornment manager installed feel free to use that otherwise install **virtualenv**
-
+```
 sudo pip install virtualenv
-
+```
 **Next Create an Enviornment for this workshop
-
+```
 virtualenv ARC329
+```
 
 **Next activate the enviornment**
 
+```
 source ARC329/bin/activate
+```
 
 
 
