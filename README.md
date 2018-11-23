@@ -48,7 +48,7 @@ sudo python -m pip install boto3 warcio matplotlib numpy wordcloud nltk rasterio
 sudo python -m pip install pywren==0.3.0
 ```
 
-4\. Let's use the Pywren interactive setup process to setup Pywren on your local system, When asked to configure advances properties, select Y: **Take note of the AWS Region(us-west-2 recommended), S3 Bucket Name and Function Name as we will need these values to configure our notebook parameters later.**
+4\. Let's use the Pywren interactive setup process to setup Pywren on your local system, When asked to configure **advanced properties**, select Y: **Take note of the AWS Region(us-west-2 recommended), S3 Bucket Name and Function Name as we will need these values to configure our notebook parameters later.**
 
 ```
 $ pywren-setup
