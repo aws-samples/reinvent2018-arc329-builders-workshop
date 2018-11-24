@@ -27,7 +27,7 @@ source ARC329/bin/activate
 
 ## Setup Environment
 
- We will need to have Jupyter Notebook running locally for this session, and ensure we have all the necessary Python libraries downloaded to visualize outputs.
+ We will need to have Jupyter Notebook running locally in your enviornment for this session, and ensure we have all the necessary Python libraries downloaded to visualize outputs.
 
 1\. Install Jupyter Notebook on your laptop. _(Note: You can safely skip this step, if you have Jupyter Notebook with kernel of Python 2.7 installed on your machine)_ To do so, follow the instructions on <http://jupyter.org/install.html>. If you have `pip` installed, the easiest way to install Jupyter is by using pip. Please make sure to use **Python 2.7** and not Python 3+ for this workshop.
 
