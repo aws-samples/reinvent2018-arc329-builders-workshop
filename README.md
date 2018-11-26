@@ -2,7 +2,7 @@
 
 ## Overview
 
-In this session we make use of a project called [pywren](http://pywren.io/) to run Python code in parallel at massive scale across [AWS Lambda](https://aws.amazon.com/lambda/) functions. We will be using [Landsat 8](https://aws.amazon.com/public-datasets/landsat/) satellite imagery to calculate a [Normalized Difference Vegetation Index (NDVI)](https://en.wikipedia.org/wiki/Normalized_Difference_Vegetation_Index) across multiple points of interests in the world, using the GeoTIFF data across multiple light spectrum bands using an [embarrassingly parallel](https://en.wikipedia.org/wiki/Embarrassingly_parallel) NVDI calculation function written in Python.
+In this session we make use of a project called [PyWren](http://pywren.io/) to run Python code in parallel at massive scale across [AWS Lambda](https://aws.amazon.com/lambda/) functions. We will be using [Landsat 8](https://aws.amazon.com/public-datasets/landsat/) satellite imagery to calculate a [Normalized Difference Vegetation Index (NDVI)](https://en.wikipedia.org/wiki/Normalized_Difference_Vegetation_Index) across multiple points of interests in the world, using the GeoTIFF data across multiple light spectrum bands using an [embarrassingly parallel](https://en.wikipedia.org/wiki/Embarrassingly_parallel) NVDI calculation function written in Python.
 
 
 This session will use a [Jupyter Notebook](http://jupyter.org/), an open-source web application that allows to create and share documents that contain live code, equations, visualizations and narrative text. This session also assumes the participant has a functional AWS account with at least one IAM(AWS Identity Access Management) user configured for CLI(AWS Command Line Interface) access.
@@ -88,7 +88,7 @@ function returned: Hello world
 export PYWREN_LOGLEVEL=INFO
 ```
 
-6\. Time to test our Pywren function and see if our laptop can communicate appropriately with our AWS environment and use PyWren in the AWS Lambda function:
+6\. Time to test our PyWren function and see if our laptop can communicate appropriately with our AWS environment and use PyWren in the AWS Lambda function:
 
 ```
 pywren test-function
